@@ -10,7 +10,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "format:check" : "prettier --check ."
+    "format:check": "prettier --check .",
+    "svelte-check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
     "@logseq/libs": "^0.0.9"
