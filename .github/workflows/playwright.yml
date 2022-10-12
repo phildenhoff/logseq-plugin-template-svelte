@@ -1,24 +1,27 @@
-name: Playwright Tests
+name: Component tests
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 jobs:
-  test:
+  tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version-file: '.nvmrc'
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 6.0.2
     - name: Install dependencies
       run: pnpm install
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: pnpm dlx playwright test
+    - name: Install browsers
+      run: npx playwright install --with-deps chromium
+    - name: Run component tests
+      run: pnpm test:e2e
     - uses: actions/upload-artifact@v3
       if: always()
       with:
