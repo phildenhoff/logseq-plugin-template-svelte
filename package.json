@@ -33,7 +33,7 @@
     "description": "A template for Logseq plugins",
     "title": "Logseq Plugin Template",
     "author": "you!",
-    "icon": "./logo.png",
+    "icon": "./public/logo.svg",
     "repo": "phildenhoff/logseq-plugin-template"
   }
 }
