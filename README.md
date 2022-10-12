@@ -4,7 +4,20 @@ A template for Logseq plugins, using Svelte, Vitest, Playwright, and pnpm.
 
 ## Getting set up
 
-Content TK
+Install pnpm, then you can either hit "Use this template" above or use degit:
+
+```
+npx degit phildenhoff/logseq-plugin-template my-ls-plugin
+cd my-ls-plugin
+git init
+```
+
+Then,
+
+```
+pnpm install
+```
+
 
 ## Technical choices
 
@@ -22,5 +35,5 @@ It allows for component/integration-level tests in your plugin.
 
 ### Why pnpm?
 
-It's faster than npm & yarn and more stable than bun.
+It's faster than npm & yarn and more stable than bun...
 
