@@ -1,7 +1,9 @@
 {
   "name": "logseq-plugin-template",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "dist/index.html",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,5 +23,13 @@
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
+  },
+  "logseq": {
+    "id": "logseq-plugin-template",
+    "description": "A template for Logseq plugins",
+    "title": "Logseq Plugin Template",
+    "author": "you!",
+    "icon": "./logo.png",
+    "repo": "phildenhoff/logseq-plugin-template"
   }
 }
