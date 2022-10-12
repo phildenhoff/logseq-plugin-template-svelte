@@ -13,6 +13,7 @@
     "format:check": "prettier --check .",
     "svelte-check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest",
+    "test:e2e": "playwright test",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest watch"
   },
@@ -20,8 +21,10 @@
     "@logseq/libs": "^0.0.9"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.0",
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
     "@tsconfig/svelte": "^3.0.0",
+    "@types/node": "^18.8.4",
     "prettier": "^2.7.1",
     "svelte": "^3.49.0",
     "svelte-check": "^2.8.1",
