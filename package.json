@@ -14,8 +14,7 @@
     "svelte-check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest",
     "test:e2e": "playwright test",
-    "test:coverage": "vitest run --coverage",
-    "test:watch": "vitest watch"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@logseq/libs": "^0.0.9"
