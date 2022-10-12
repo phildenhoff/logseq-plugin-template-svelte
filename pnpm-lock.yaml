@@ -11,6 +11,7 @@ specifiers:
   tslib: ^2.4.0
   typescript: ^4.6.4
   vite: ^3.1.0
+  vite-plugin-logseq: ^1.1.2
 
 dependencies:
   '@logseq/libs': 0.0.9
@@ -25,6 +26,7 @@ devDependencies:
   tslib: 2.4.0
   typescript: 4.8.4
   vite: 3.1.7
+  vite-plugin-logseq: 1.1.2
 
 packages:
 
@@ -951,6 +953,12 @@ packages:
     dependencies:
       inherits: 2.0.3
     dev: false
+
+  /vite-plugin-logseq/1.1.2:
+    resolution: {integrity: sha512-l5YvoH3K25Zx9eqgoJFug7NfVqSPwq7/FcYYhN1TkdG8ZOiD+c+TAwdCS2dJbGgvx8GmSpbgwSZWgslB+wH53g==}
+    dependencies:
+      magic-string: 0.26.7
+    dev: true
 
   /vite/3.1.7:
     resolution: {integrity: sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==}
