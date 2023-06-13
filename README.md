@@ -18,6 +18,9 @@ Then,
 pnpm install
 ```
 
+## Templates for other frameworks
+
+**React**: [pengx17/logseq-plugin-template-react](https://github.com/pengx17/logseq-plugin-template-react)
 
 ## Technical choices
 
