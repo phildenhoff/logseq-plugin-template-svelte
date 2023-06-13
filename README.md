@@ -1,6 +1,6 @@
-# Logseq Plugin template
+# Logseq Plugin template for Svelte
 
-A template for Logseq plugins, using Svelte, Vitest, Playwright, and pnpm.
+A template for Logseq plugins using Svelte, Vitest, Playwright, and pnpm.
 
 ## Getting set up
 
@@ -23,17 +23,29 @@ pnpm install
 
 ### Why Svelte?
 
-It's a pretty-good framework. Feel free to adapt this for any other framework.
+It's a good framework! Feel free to adapt this for any other framework, in case you'd like to set up an Angular or Vue.js template.
 
-### Why Vitest?
+### Why use Vitest?
 
-It's faster than Jest, and a better fit for unit tests than Playwright.
+Vitest is faster than Jest, and a better fit for unit tests than Playwright.
 
-### Why Playwright?
+### Why include Playwright?
 
-It allows for component/integration-level tests in your plugin.
+It allows for component/integration-level tests in your plugin. 
 
-### Why pnpm?
+If you don't want to use it, you can remove this line:
 
-It's faster than npm & yarn and more stable than bun...
+https://github.com/phildenhoff/logseq-plugin-template-svelte/blob/af03895844a181025acac788686b0a72e92cbe12/package.json#L16
 
+as well as the [Playright config file](playwright.config.ts), the [e2e folder](e2e), the [playwright workflow file in `.github/actions`](.github/workflows/playwright.yml), and finally the `@playwright/test` dev dependency in the Package.json:
+
+https://github.com/phildenhoff/logseq-plugin-template-svelte/blob/af03895844a181025acac788686b0a72e92cbe12/package.json#L23
+
+### Why pnpm instead of X?
+
+When I created this, `pnpm` was faster than `npm` and `yarn`.
+`bun`, my first choice, wasn't stable.
+That doesn't mean you have to use it!
+You are more than welcome to use another package manager instead, but you _may_ end up with different packages than what PNPM would install for you.
+
+So be warned, things may not work if you don't use PNPM!
