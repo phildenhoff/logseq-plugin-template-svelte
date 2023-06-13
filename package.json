@@ -1,5 +1,5 @@
 {
-  "name": "logseq-plugin-template",
+  "name": "logseq-plugin-template-svelte",
   "private": false,
   "license": "MIT",
   "version": "0.1.0",
@@ -36,11 +36,11 @@
     "vitest": "^0.24.1"
   },
   "logseq": {
-    "id": "logseq-plugin-template",
+    "id": "logseq-plugin-template-svelte",
     "description": "A template for Logseq plugins",
     "title": "Logseq Plugin Template",
     "author": "you!",
     "icon": "./public/logo.svg",
-    "repo": "phildenhoff/logseq-plugin-template"
+    "repo": "phildenhoff/logseq-plugin-template-svelte"
   }
 }
